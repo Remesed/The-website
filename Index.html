@@ -1,0 +1,212 @@
+<DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="with=device-width,initial-scale=1.0">
+       <title>PLACES IN TABUK</title> 
+        <link rel="stylesheet" href="style.css">
+        <style>
+        /*boutton style*/
+            .btn{
+                display: inline-block;
+                text-decoration: none;
+                color: white;
+                border: 1px solid white;
+                padding: 12px 34px;
+                font-size: 13px;
+                background: transparent;
+                position: relative;
+                cursor: pointer;
+            }
+            .btn:hover{
+                border: 1px solid #004fb3; 
+                background: #004fb3; 
+                transition: 1s;       
+            }
+            
+            /*places in home page style*/
+            
+            #places{
+                 width: 80%;
+                 margin: auto;
+                 text-align: center;
+                 padding-top: 100px;
+                
+             }
+            
+            
+            
+            /* home page heading & pargraph*/
+            h1{
+                font-size: 36px;
+                font-weight: 600;
+            }
+            p{
+                color: #002092;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 22px;
+                padding: 10px;
+                
+            }
+            
+            /* style for the picture in home page*/
+            #rc{
+                margin: 5%;
+                display: flex;
+                justify-content: space-between;
+                
+            }
+            .places-co{
+                flex-basis: 31%;
+                background:#54b2d8;
+                border-radius: 10px;
+                margin-bottom: 5%;
+                padding: 20px 12px;
+                box-sizing: border-box;
+                transition: 0.5s;
+            }
+            .places-co:hover{
+                box-shadow: 0 0 20px 0px rgba(0,0,0,0.4);
+            }
+            
+            h3{
+                text-align: center;
+                font-weight: 600;
+                margin: 10px 0;
+            }
+            
+            /* for responsive */
+            @media(max-width:700px){
+                #rc{
+                    flex-direction: column;
+                }
+            } 
+            
+            #pictures{
+                width:80%;
+                margin: auto;
+                text-align: center;
+                padding-top: 50px;
+            }
+             .pictures-co{
+                flex-basis: 32%;
+                border-radius: 10px;
+                margin-bottom: 30px;
+                position: relative;
+                overflow: hidden;
+            }
+            .pictures-co img {
+                width: 100%;
+                display: block;
+            }
+        
+        
+        </style>
+        
+    </head>
+    <body style="background-color: aliceblue;">
+        
+        <!--nav head-->
+        
+        <section class="header">
+        <nav>
+      <h1 style="text-align: left; font-size:20px; font-family:serif;
+     color: whitesmoke;padding:40px 8px; width:150px">Tabuk city</h1>
+      <div class="nav-link">
+            <ul>
+                  <li><a href="Index.html">HOME</a></li>
+                  <li><a href="About.html">ABOUT</a></li> 
+                  <li><a href="Places.html">PLACES</a></li>
+                  <li><a href="Tour.html">TOUR</a></li>
+                  <li><a href="Members.html">MEMBERS</a></li> 
+                  <li><a href="Contact.html">CONTACT</a></li>  
+            </ul>  
+        </div>
+    </nav>
+            <!---home page-->
+            <div class="text-box">
+            <h1>Tourist Places In Tabuk</h1>
+                <p>Tabuk (Arabic: تَبُوْك Tabūk) is the capital city of the Tabuk Region in northwestern Saudi Arabia. It has a population of 667,000 (as of 2021). It is close to the Jordan–Saudi Arabia border and houses the largest air force base in Saudi Arabia.</p>
+                <a href="Places.html" class="btn">Visit Us To Know More</a>
+            </div>
+            
+       </section>
+        
+       <!--places in home page-->
+      <section id="Places">
+          <h1> Places to visit</h1>
+          <p>Tabuk Castle <br> Al-Disah Valley - Tayeb Ism Park <br>The Red Sea Coast - Northwest Armed Forces Museum<br>Umluj - Haql - Neom</p>
+        
+          <div id=rc>
+             <div class="places-co">
+              <h3>*Tabuk Castle:*</h3>
+                 <p> Explore the historical Tabuk Castle, which dates back to the Ottoman era, and discover its unique architecture and surroundings.</p>
+              </div>
+              <div class="places-co">
+              <h3>*Al-Disah Valley:*</h3>
+                 <p>  Immerse yourself in the natural beauty of Al-Disah Valley, known for its stunning landscapes, rock formations, and picturesque views.</p>  
+              </div>
+              <div class="places-co">
+              <h3>*The Red Sea Coast:*</h3>
+                 <p>  Tabuk boasts a beautiful coastline along the Red Sea. Relax on the beaches, indulge in water activities, or simply enjoy the serene atmosphere.</p>
+              </div>
+          </div>
+      </section>
+        
+     <!---pictures in home page--->
+    <section id="pictures">
+        <h1>Photos of tourist places that you might find appealing:</h1>
+        <p>*Al-Disah Valley-The Red Sea Coast-Tabuk Castle*</p>
+        
+        <div id="rc">
+        <div class="pictures-co">
+            <img src="Tabuk_img/Disah.jpeg">
+            <div class="layer">
+            <h3>AL-DISAH VALLEY</h3>
+            </div>
+        </div>
+            <div class="pictures-co">
+            <img src="Tabuk_img/redsea.jpg">
+            <div class="layer">
+            <h3>THE RED SEA COAST</h3>
+            </div>
+        </div>
+            <div class="pictures-co">
+            <img src="Tabuk_img/Tabuk-Castle.jpg">
+            <div class="layer">
+            <h3>TABUK CASTLE</h3>
+            </div>
+        </div>
+        </div>
+        <!---contact us in home page--->
+ </section>
+        <section class="con">
+            <div>
+            <h1>If you want to know more contact us</h1>
+           <a href="Contact.html" class="btn">CONTACT US</a>
+        </div>
+        </section>
+        
+        <!--- about us footer--->
+        <section class="ftr">
+            <h4>About Us</h4>
+        <p>our tourist site dedicated to Tabuk and its surroundings!<br>We offer you a unique exploration experience where you can discover the beauty of tourist attractions in Tabuk and its outskirts.</p>
+        </section>
+        
+        
+    </body>
+    </html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

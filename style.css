@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+/* style for home page*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(5,9,30,0.7),rgba(5,9,30,0.7)),url(Tabuk_img/Tabuk.jpeg)
+    ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* style for nav*/
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link{
+    flex: 1;
+    text-align: right;
+}
+.nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-link ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+.nav-link ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:#004fb3; 
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-link ul li:hover::after{
+    width:100%; 
+}
+
+/* style for h &p in home page*/
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center; 
+}
+.text-box h1{
+   font-size:62px;
+}
+.text-box p{
+      margin: 10px 0 40px;
+      font-size: 14px;
+      color:white; 
+}
+
+/* for the pictures style in home page*/
+.layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(0,180,255,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight:500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* style for the contact us in home page*/
+.con{
+    margin: 100px auto;
+    width: 70%;
+    background-image:linear-gradient(rgba(5,9,30,0.7),rgba(5,9,30,0.7)),url(Tabuk_img/banban.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.con h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+/* style for the footer in all pages*/
+.ftr{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.ftr h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+
+/*style for pages header*/
+.sec-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(5,9,30,0.5),rgba(5,9,30,0.5)),url(Tabuk_img/logo.jpeg);
+    background-position:center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+/*about page*/
+.about{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-co{
+    flex-basis: 48%;
+    padding:30px 2px;
+}
+.about-co img{
+    width: 100%;
+    
+}
+about-co h1{
+    padding-top: 0;
+   
+}
+
+about-co p{
+    padding: 15px 0 25px;
+    margin: auto;
+}
+
+/* member page*/
+.member-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(5,9,30,0.5),rgba(5,9,30,0.5)),url(Tabuk_img/membrs.png);
+    background-position:center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.membr{
+     color: steelblue;
+    margin-bottom: 40px;
+    padding: 0;
+    text-align: center;
+   
+}
+.membr h1{
+    color: skyblue;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;  
+}
+
+/*list */
+ .box{
+    width: 100%; 
+    border-bottom: 20px solid #03a9f4;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+ }
+.box h2{
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ }
+        .box ul{
+            position: relative;
+            background: #fff;
+        }
+        .box ul li{
+         list-style: none;
+         padding: 10px;
+     
+         background: #fff;
+         box-shadow: 0 5px 25px rgba(0,0,0, 0.1);
+         transition: transform 0.5s;
+        }
+        .box ul :hover li{
+           opacity: 0.2;
+        }
+        .box ul li:hover{
+         transform: scale(1.0);
+         z-index: 100;
+         background:#25bcff;
+         box-shadow: 0 5px 25px rgba(0,0,0, 0.2);
+         color: #fff;
+         opacity: 1;
+        }
+        .box ul li span{
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            background: #25bcff;
+            color: #fff;
+            display:inline-block;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-size: 12px;
+            font-weight: 600;
+            transform: translateY(-2px);
+        }
+        .box ul li:hover span{
+            background:  #fff;
+            color:#25bcff;
+ }
+
+/* tour picturs and table*/
+ 
+.areas{
+     width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.areas-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.areas-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.areas-col p{
+    padding:0;   
+}
+.areas-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+table{
+width: 100%;
+border-spacing: 6px; 
+}
+
+th{
+    background: #1075a0;
+    height: 40px;
+    width: 50px;
+}
+td{
+    background: #108ab65a;
+    height: 100px;
+    text-align: center;
+    width: 50px;
+
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    padding: 3px;
+}
+
+
+.cont-col{
+    margin-top: 50px;
+}
+
+.cont-col input, .cont-col textarea{
+    width:100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

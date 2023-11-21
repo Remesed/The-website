@@ -1,0 +1,184 @@
+<DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="with=device-width,initial-scale=1.0">
+       <title>PLACES IN TABUK</title> 
+        <link rel="stylesheet" href="style.css">
+        <style>
+         
+            .btn{
+                display: inline-block;
+                text-decoration: none;
+                color: white;
+                border: 1px solid white;
+                padding: 12px 34px;
+                font-size: 13px;
+                background: transparent;
+                position: relative;
+                cursor: pointer;
+            }
+            .btn:hover{
+                border: 1px solid #004fb3; 
+                background: #004fb3; 
+                transition: 1s;       
+            }
+            #places{
+                 width: 80%;
+                 margin: auto;
+                 text-align: center;
+                 padding-top: 100px;
+                
+             }
+            h1{
+                font-size: 36px;
+                font-weight: 600;
+            }
+            p{
+                color: #002092;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 22px;
+                padding: 10px;
+                
+            }
+            #rc{
+                margin: 5%;
+                display: flex;
+                justify-content: space-between;
+                
+            }
+            .places-co{
+                flex-basis: 31%;
+                background:#54b2d8;
+                border-radius: 10px;
+                margin-bottom: 5%;
+                padding: 20px 12px;
+                box-sizing: border-box;
+                transition: 0.5s;
+            }
+            .places-co:hover{
+                box-shadow: 0 0 20px 0px rgba(0,0,0,0.4);
+            }
+            
+            h3{
+                text-align: center;
+                font-weight: 600;
+                margin: 10px 0;
+            }
+            @media(max-width:700px){
+                #rc{
+                    flex-direction: column;
+                }
+            } 
+            
+            #pictures{
+                width:80%;
+                margin: auto;
+                text-align: center;
+                padding-top: 50px;
+            }
+             .pictures-co{
+                flex-basis: 32%;
+                border-radius: 10px;
+                margin-bottom: 30px;
+                position: relative;
+                overflow: hidden;
+            }
+            .pictures-co img {
+                width: 100%;
+                display: block;
+            }
+           
+        
+        
+        </style>
+        
+    </head>
+    <body style="background-color: aliceblue;">
+        <section class="member-header">
+        <nav>
+      <h1 style="text-align: left; font-size:20px; font-family:serif;
+     color: whitesmoke;padding:40px 8px; width:150px">Tabuk city</h1>
+      <div class="nav-link">
+            <ul>
+                  <li><a href="Index.html">HOME</a></li>
+                  <li><a href="About.html">ABOUT</a></li> 
+                  <li><a href="Places.html">PLACES</a></li>
+                  <li><a href="Tour.html">TOUR</a></li>
+                  <li><a href="Members.html">MEMBERS</a></li> 
+                  <li><a href="Contact.html">CONTACT</a></li>    
+            </ul>  
+        </div>
+    </nav>
+         <h1 style="margin-top: 40px;">MEMBERS</h1>
+            
+       </section>
+        
+       <section class="membr">
+         <h1>Members Names :</h1>
+    <ul id="names-list"></ul>
+
+    <script>
+        // List of names
+        var names = ["Nawal Sayah Aljohani", "Remas Abdullah Hamroun", "Ruba Bashir Al-Balawi", "Almasah sameer"];
+
+        // Update the page with random names
+        function updateNames() {
+            var namesList = document.getElementById("names-list");
+            namesList.innerHTML = "";
+
+            // Shuffle the names array randomly
+            var shuffledNames = shuffleArray(names);
+
+            // Add names to the list
+            shuffledNames.forEach(function(name) {
+                var listItem = document.createElement("li");
+                listItem.textContent = name;
+                namesList.appendChild(listItem);
+            });
+        }
+
+        // Function to shuffle an array
+        function shuffleArray(array) {
+            for (var i = array.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+            return array;
+        }
+
+        // Update names when the page is refreshed 
+        updateNames();
+    </script>
+        
+        </section> 
+        
+        
+        
+    
+        
+         <!--- about us footer--->
+        <section class="ftr">
+            <h4>About Us</h4>
+        <p>our tourist site dedicated to Tabuk and its surroundings!<br>We offer you a unique exploration experience where you can discover the beauty of tourist attractions in Tabuk and its outskirts.</p>
+        </section>
+      
+        
+    </body>
+    </html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

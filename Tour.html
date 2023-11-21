@@ -1,0 +1,226 @@
+<DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="with=device-width,initial-scale=1.0">
+       <title>PLACES IN TABUK</title> 
+        <link rel="stylesheet" href="style.css">
+        <style>
+        /*boutton style*/
+            .btn{
+                display: inline-block;
+                text-decoration: none;
+                color: white;
+                border: 1px solid white;
+                padding: 12px 34px;
+                font-size: 13px;
+                background: transparent;
+                position: relative;
+                cursor: pointer;
+            }
+            .btn:hover{
+                border: 1px solid #004fb3; 
+                background: #004fb3; 
+                transition: 1s;       
+            }
+            
+            /*places in home page style*/
+            
+            #places{
+                 width: 80%;
+                 margin: auto;
+                 text-align: center;
+                 padding-top: 100px;
+                
+             }
+            
+            
+            
+            /* home page heading & pargraph*/
+            h1{
+                font-size: 36px;
+                font-weight: 600;
+            }
+            p{
+                color: #002092;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 22px;
+                padding: 10px;
+                
+            }
+            
+            /* style for the picture in home page*/
+            #rc{
+                margin: 5%;
+                display: flex;
+                justify-content: space-between;
+                
+            }
+            .places-co{
+                flex-basis: 31%;
+                background:#54b2d8;
+                border-radius: 10px;
+                margin-bottom: 5%;
+                padding: 20px 12px;
+                box-sizing: border-box;
+                transition: 0.5s;
+            }
+            .places-co:hover{
+                box-shadow: 0 0 20px 0px rgba(0,0,0,0.4);
+            }
+            
+            h3{
+                text-align: center;
+                font-weight: 600;
+                margin: 10px 0;
+            }
+            
+            /* for responsive */
+            @media(max-width:700px){
+                #rc{
+                    flex-direction: column;
+                }
+            } 
+            
+            #pictures{
+                width:80%;
+                margin: auto;
+                text-align: center;
+                padding-top: 50px;
+            }
+             .pictures-co{
+                flex-basis: 32%;
+                border-radius: 10px;
+                margin-bottom: 30px;
+                position: relative;
+                overflow: hidden;
+            }
+            .pictures-co img {
+                width: 100%;
+                display: block;
+            }
+        
+        
+        </style>
+        
+    </head>
+    <body style="background-color: aliceblue;">
+        
+        <!--nav head-->
+        
+        <section class="sec-header">
+        <nav>
+      <h1 style="text-align: left; font-size:20px; font-family:serif;
+     color: whitesmoke;padding:40px 8px; width:150px">Tabuk city</h1>
+      <div class="nav-link">
+            <ul>
+                  <li><a href="Index.html">HOME</a></li>
+                  <li><a href="About.html">ABOUT</a></li> 
+                  <li><a href="Places.html">PLACES</a></li>
+                  <li><a href="Tour.html">TOUR</a></li>
+                  <li><a href="Members.html">MEMBERS</a></li> 
+                  <li><a href="Contact.html">CONTACT</a></li>  
+            </ul>  
+        </div>
+    </nav>
+           
+            <h1 style="margin-top: 40px;">Tour</h1>
+       </section>
+        
+       
+        <!---tour pic and table--->
+        <section class="areas">
+     <h1>Our Areas</h1>
+     <p>The city of Tabuk occupies a great position among the cities of Saudi Arabia due to its historical importance and the many tourist places there.</p>
+<div class="row">
+    <div class="areas-col">
+    <img src="Tabuk_img/neom Image .jpg">
+    <h3>NEOM</h3>
+    <p>NEOM is an ambitious project that aims to transform the current Saudi economy by diversifying its economic model.</p>
+     </div>
+    <div class="areas-col">
+    <img src="Tabuk_img/wadi aldisa Image .jpg">
+    <h3>WADI AL-DISA</h3>
+    <p>It is characterized by an abundance of water streams, palm trees and wild herbs, which makes it acquire a unique nature.</p>
+    </div>
+    <div class="areas-col">
+        <img src="Tabuk_img/al_lawz Image .jpg">
+        <h3>JABAL AL-LAWZ</h3>
+        <p>The mountain also features stunning landscapes that attract nature enthusiasts.</p>
+        </div>
+        <div class="areas-col">
+            <img src="Tabuk_img/haql Image .jpg">
+            <h3>HAQL</h3>
+            <p>one of the governorates of the Tabuk region, overlooks the Gulf of Aqaba in the far north of the Kingdom and contains the Durra border crossing, which connects the Kingdom with Jordan, the Arab Republic of Egypt and Palestine.</p>
+            </div>
+            <div class="areas-col">
+                <img src="Tabuk_img/wadi teyip Image .jpg">
+                <h3>WADI TAYIB ISM</h3>
+                <p>It is a narrow watercourse with very high rims, especially near its mouth. Its course includes a group of water springs around which some palm trees have grown.</p>
+                </div>
+                <div class="areas-col">
+                    <img src="Tabuk_img/umllj Image .jpg">
+                    <h3>UMLIJ</h3>
+                    <p>The Umluj Islands have a wonderful marine nature revealed by their soft sand, crystal clear waters, and numerous water activities.</p>
+                    </div>
+</div>
+
+ </section>
+    <section class="areas">
+        <h1>The most famous tourist areas</h1>
+        <p>The city of Tabuk occupies a great position among the cities of Saudi Arabia due to its historical importance and the many tourist places there.</p>
+    </section>
+    <table>
+        <tr Style="color: rgb(237, 235, 233);" >
+            <th>NEOM</th>
+            <th>WADI ALDISA VALLEY</th>
+            <th>JABAL AL-LAWZ</th>
+        </tr>
+        <tr>
+            <td>It is a region located in the northwest of the Kingdom of Saudi Arabia. NEOM means “new future,” and it is a company with more than 2,800 employees from 86 countries, who currently work and live here in the NEOM region. This confirms that NEOM has indeed become a home for dreamers and achievers, who aspire to contribute to building a new economic model for the Kingdom and the entire world.</td>
+            <td>Wadi Al Disa, one of the sites in the city of Tabuk in Saudi Arabia, is characterized by an abundance of water streams, palm trees and wild herbs, which makes it acquire a unique nature, in addition to being one of the most important natural foundations of the NEOM project. It was named after the village of Al-Disa, which is located at the entrance to the valley from the western side. The word Al Disa means (valley full of palm trees). It is also called “Qaraqar”, or Wadi Damah</td>
+            <td>Jabal al-Lawz is located in the northwest of the Kingdom of Saudi Arabia, near the Jordanian border in the Tabuk region. The snowfall of Jabal al-Lawz is an opportunity for visitors to go to the high mountains, ski on the snow, and enjoy the natural scenery.
+                It is also possible to camp in the snow using traditional Arab tents. After a long day of playing in the snow, skiing, and practicing various activities, you can camp using the appropriate tools for camping in the snow, with pure white snow accumulating everywhere, and the bright stars of the sky.</td>
+        </tr>
+        
+        
+    </table>
+        
+<div>
+    <table>
+        <tr style="color: rgb(244, 242, 240);">
+            <th>HAQL</th>
+            <th> WADI TAYIB ISM PARK</th>
+            <th>UMLIJ</th>
+        </tr>
+        <tr>
+            <td>Haql Governorate is currently considered the most important tourist center in the Tabuk region, and Al-Durrah Port represents the last stop in the Kingdom for travelers via land route, passing through the port of Aqaba, and when some travelers need to rest and stock up on the necessary luggage for travel. There are many tourist sites in Haql Governorate that are suitable for various purposes: the sunken ship, Al Wasl Island, and the coastal village of Al Hamidiya in Haql.</td>
+            <td>Wadi “Tayeb Ism” is an elevated area located in Tabuk, northwest of the Kingdom of Saudi Arabia, at an altitude of approximately 314 metres. It is 253 km away from Tabuk on the banks of the Gulf of Aqaba. It is close to the Al-Bid’a area, which was one of the evidences of successive civilizations in the periods before Christ until the dawn of time.</td>
+            <td>It is the White City, or the Saudi Maldives as some like to call it. On the coast of the Red Sea between the cities of Al-Wajh and Yanbu, lies the city of Umluj, the main important port in the Tabuk region. In ancient times, the city of Umluj was the second largest commercial city after the holy city of Mecca, and it bore the name of Al-Hawraa. There are many traces and remains of ancient ruins evident in the north of the city, and it is believed that the city lived during the Roman era and was known as the White City.</td>
+        </tr> 
+    </table>
+     
+        
+        <!--- about us footer--->
+        <section class="ftr">
+            <h4>About Us</h4>
+        <p>our tourist site dedicated to Tabuk and its surroundings!<br>We offer you a unique exploration experience where you can discover the beauty of tourist attractions in Tabuk and its outskirts.</p>
+        </section>
+        
+        
+    </body>
+    </html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
